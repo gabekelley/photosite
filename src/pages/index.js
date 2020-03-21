@@ -8,7 +8,7 @@ import SEO from "../components/seo"
 class IndexPage extends React.Component {
   render() {
     const { data } = this.props
-    const images = data.allFile.edges
+    const images = data.allImageSharp.edges
 
     return (
       <Layout>
@@ -17,7 +17,7 @@ class IndexPage extends React.Component {
         {images.map(({ node }) => {
           return (
             <li className="photo-wrap">
-              <img key={node.id} src={node.publicURL} alt={node.name} />
+              <img src={node.fluid.src} srcSet={node.fluid.srcSet} />
             </li>
           )
         })}
@@ -29,12 +29,16 @@ class IndexPage extends React.Component {
 
 export const query = graphql`
   {
-    allFile {
+    allImageSharp {
       edges {
         node {
-          id
-          name
-          publicURL
+          fluid {
+            presentationWidth
+            presentationHeight
+            originalImg
+            srcSet
+            src
+          }
         }
       }
     }
