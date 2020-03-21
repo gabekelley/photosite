@@ -18,29 +18,26 @@ const Layout = ({ children }) => {
       site {
         siteMetadata {
           title
+          description
         }
       }
     }
   `)
 
   return (
-    <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+    <div>
+      <Header siteTitle={data.site.siteMetadata.title} description={data.site.siteMetadata.description} />
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
         }}
       >
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <marquee>Currently reading: The Glass Hotel by Emily St. John Mandel | Just read: New Waves by Kevin Nguyen | Next up: Ulysses by James Joyce</marquee>
         </footer>
       </div>
-    </>
+    </div>
   )
 }
 
