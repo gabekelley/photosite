@@ -15,9 +15,9 @@ const Header = ({ siteTitle, description }) => (
           {siteTitle}
         </Link>
       </h1>
-      <p className="c-three-quarter">
+      {/* <p className="c-three-quarter">
         {description}
-      </p>
+      </p> */}
     </div>
   </header>
 )
