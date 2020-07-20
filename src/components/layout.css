@@ -8,7 +8,6 @@ body {
   overflow-x: hidden;
   width: 100%;
   margin: 0;
-  overflow-y: hidden;
 }
 
 a {
@@ -142,6 +141,10 @@ ul {
 
 
 @media only screen and (min-width: 600px) {
+  body {
+    overflow-y: hidden;
+  }
+
   .flex {
     display: flex;
     flex-direction: row;
