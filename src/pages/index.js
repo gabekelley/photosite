@@ -19,7 +19,7 @@ class IndexPage extends React.Component {
           <div className="bio-wrap">
             <div className="bio-wrap__top">
               <h1 className="thin">Gabe Kelley</h1>
-              <h2 className="light">Currently a Staff Product Designer at Etsy<sup><a href="#fn1" id="ref1">1</a></sup>,  I'm focused on design systems, service design and operations. As a human-centered designer, I believe I have a duty to only build with organizations that aim to improve the lives of others. In my free time, I'm reading<sup><a href="#fn2" id="ref2">2</a></sup>.If you'd like to chat, go on and send me <a href="mailto:hello@gabekelley.com">an email</a>.</h2>
+              <h2 className="light">Currently a Staff Product Designer at Etsy<sup><a href="#fn1" id="ref1">1</a></sup>,  I'm focused on design systems, service design and operations. As a human-centered designer, I believe I have a duty to only build with organizations that aim to improve the lives of others. In my free time, I'm reading<sup><a href="#fn2" id="ref2">2</a></sup>. If you'd like to chat, go on and send me <a href="mailto:hello@gabekelley.com">an email</a>.</h2>
             </div>
             <div className="bio-wrap__bottom thin">
               <div className="divider"></div>
