@@ -24,7 +24,7 @@ class IndexPage extends React.Component {
             <div className="bio-wrap__bottom thin">
               <div className="divider"></div>
               <sup>1</sup> <span>2015 —</span> <a href="#ref1" id="fn1">↩</a><br/>
-              <sup>2</sup> <span>Currently <span className="italic">The Recognitions</span> by William Gaddis</span> <a href="#ref2" id="fn2">↩</a><br/>
+              <sup>2</sup> <span>Currently <span className="italic">A Distant Mirror</span> by Barbara W. Tuchman</span> <a href="#ref2" id="fn2">↩</a><br/>
             </div>
           </div>
         </div>
